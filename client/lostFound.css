@@ -1,0 +1,39 @@
+.selectionContainer{
+	background-color: #f8f8f8;
+	width: 100%;
+	height: calc(100% - 110px);  /*remove the height of the padding of the nav bar*/
+	margin:0;
+	padding-left:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.selectionContainer .rowContainer{
+	width: 100%;
+	height:25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+
+}
+
+.selectionContainer .rowContainer .selectionElement{
+	border: 1.5px solid #4ff4cb;
+	width:140px; /*please make these values either dynamic (not likely) or make media queries*/
+	height:45px; /*^*/
+	margin:0 4.5vh 0 4.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Francisco-UltraLight";
+	font-size: 20px;
+	border-radius: 0.2em;
+}
+
+
+.selectionContainer .rowContainer .selectionElement:hover{
+	border: 1.5px solid #4ff4f4;
+}
