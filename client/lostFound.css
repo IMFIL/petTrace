@@ -1,7 +1,19 @@
 .selectionContainer{
 	background-color: #f8f8f8;
+	background: url("/dogPaw.jpg") no-repeat center center fixed;
 	width: 100%;
 	height: calc(100% - 110px);  /*remove the height of the padding of the nav bar*/
+	margin:0;
+	padding-left:0;
+	position: relative;
+}
+.selectionContainer .shadowContainer{
+	background-color: rgba(100,100,100,0.6);
+	position: relative;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 	margin:0;
 	padding-left:0;
 	display: flex;
@@ -28,9 +40,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	border-radius: 0.2em;
+}
+
+.selectionContainer .rowContainer .selectionElement p{
 	font-family: "Francisco-UltraLight";
 	font-size: 20px;
-	border-radius: 0.2em;
+	color: white;
+
 }
 
 
