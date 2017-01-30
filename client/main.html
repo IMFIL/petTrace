@@ -1,11 +1,13 @@
-<head>
-  <title>pLost</title>
-</head>
+<template name="main">
+	<head>
+	  <title>pLost</title>
+	</head>
 
-<body>
-  {{>navbar}}
-  {{>lostFound}}
-  {{>footer}}
-</body>
+	<body>
+	{{>navBar}}
+		{{>yield}}
+	{{>footer}}
+	</body>
+</template>
 
 

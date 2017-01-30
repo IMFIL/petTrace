@@ -1,0 +1,20 @@
+.loginContainer{
+	width: 100%;
+	height: calc(100% - 110px);  /*remove the height of the padding of the nav bar*/
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.loginContainer .loginBox{
+	margin-bottom:50px; /*fix the static dimensions*/
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:600px; /*fix the static dimensions*/
+	height:400px; /*fix the static dimensions*/
+}

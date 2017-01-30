@@ -21,7 +21,7 @@
 
 :root{
 	--nav-element-text-size:18.2px;
-	--nav-element-text-color:rgba(141,141,141,0.8);
+	--nav-element-text-color:#414141;
 	--nav-element-text-font:"Francisco-UltraLight";
 }
 
@@ -45,7 +45,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding:17px 0 17px 0;
+	padding:17px 0 17px 0; /*fix the static dimensions*/
 }
 
 .navBar .leftHandSide .navBarPlaceHolder .navBarElementContainer{
@@ -67,7 +67,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding:17px 0 17px 0;
+	padding:17px 0 17px 0; /*fix the static dimensions*/
 }
 
 .navBar .rightHandSide .navBarPlaceHolder .navBarElementContainer{
@@ -79,7 +79,7 @@
 }
 
 .navBar .navBarPlaceHolder .navBarElementContainer:hover{
-	color: #414141;
+	color: rgba(141,141,141,0.8);
 	cursor: pointer;
 }
 
