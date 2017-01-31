@@ -24,5 +24,4 @@ accounts-google
 iron:router
 accounts-password
 accounts-facebook
-accounts-ui
 accounts-base
