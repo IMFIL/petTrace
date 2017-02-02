@@ -1,11 +1,16 @@
 <template name="login">
 	<div class="loginContainer">
-		<form id="login-form" action="action">
-  			<div class="loginBox">
-		        <input type="email" id="login-email" placeholder="Email" />
-		        <input type="password" id="login-password" placeholder="Password" />
-		        <input type="submit" id="login-button" value="Sign in" />
-		     </div>
-		</form> 
+		<video loop muted autoplay poster="img/videoframe.jpg" class="videoBackground">
+	        <source src="pupperRunning.mp4" type="video/mp4">
+	    </video>
+		<div class="loginBoxesContainer">
+			<div class="loginBox">
+				<form id="login-form" action="action">
+			        <input type="email" id="login-email" placeholder="Email" />
+			        <input type="password" id="login-password" placeholder="Password" />
+			        <input type="submit" id="login-button" value="Sign in" />
+				</form> 
+			</div>
+		</div>
 	</div>
 </template>
