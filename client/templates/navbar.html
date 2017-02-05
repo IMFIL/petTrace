@@ -2,15 +2,25 @@
   <div class="navBar">
   	<div class="leftHandSide">
   		<div class="navBarPlaceHolder">
-	  		<span class="navBarElementContainer">petTrace</span>
+	  		<span class="navBarElementContainer" id="petTrace">petTrace</span>
   		</div>
   	</div>
   	<div class="rightHandSide">
   		<div class="navBarPlaceHolder">
-  			<span class="navBarElementContainer">Search</span>
-  			<span class="navBarElementContainer">Login</span>
-  			<span class="navBarElementContainer">Signup</span>
+      {{> loginOptions}}
   		</div>
   	</div>
   </div>
+</template>
+
+<template name="loginOptions">
+{{#if currentUser}}
+  <span class="navBarElementContainer" id="userName">{{currentUser.login}}</span>
+  <span class="navBarElementContainer" id="search">search</span>
+{{else}}
+  <span class="navBarElementContainer" id="learch">search</span>
+  <span class="navBarElementContainer" id="login">login</span>
+  {{#if isloginServicesConfigured}}
+  {{/if}}
+{{/if}}
 </template>

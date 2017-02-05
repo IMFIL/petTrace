@@ -5,6 +5,7 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	position: relative;
 }
 
 .loginContainer .videoBackground{
@@ -40,8 +41,53 @@
 	height:100%; 
 }
 
+.loginContainer .loginBox .facebookLogin{
+	position: relative;
+	margin:0 0 30px 0;
+	width: 60%;
+	height:34px;
+	border-radius: 4px;
+	padding:0 0 0 10px;
+	box-sizing: border-box;
+	background-color: #3b5998;
+	display: flex;
+	align-items: center;
+
+}
+.loginContainer .loginBox .facebookLogin:hover{
+	cursor: pointer;
+}
+
+
+.loginContainer .loginBox .facebookLoginText{
+	position: relative;
+	color:white;
+	padding: 0 0 0 16%;
+	font-family: "Francisco-UltraLight";
+	font-size: 16px;
+	width:50%;
+
+}
+
+.loginContainer .loginBox .facebookLogo{
+	height: 30px;
+}
+
+.loginContainer .loginBox .orLine{
+	border: 0;
+	width:60%;
+    height: 3px;
+    margin:0 0 30px 0;
+    background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(255, 255, 255, 1),rgba(150, 150, 150, 0));
+}
+
+
 .loginContainer #login-form{
-	width:70%;
+	width:60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .loginContainer .loginBox input{
@@ -54,14 +100,37 @@
 	padding:0 0 0 10px;
 	box-sizing: border-box;
 	background-color: white;
+	font-family: "Francisco-UltraLight";
 }
 
 .loginContainer  #login-button{
 	font-size: 18px;
 	height:43px;
 	padding:0;
+	width:50%;
 }
+
+
+.loginContainer  #login-button:hover{
+	cursor: pointer;
+}
+
 
 input:focus{
 	outline: #4FF4F3 auto 5px;
 }
+
+.loginContainer  .registerLink{
+	position: absolute;
+    margin:  10px 0  10px 0;
+    padding: 0;
+    color: white;
+   	font-family: "Francisco-UltraLight";
+   	cursor: pointer;
+}
+
+.loginContainer  .registerLink:hover{
+	text-decoration: underline;
+
+}
+

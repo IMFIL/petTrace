@@ -16,6 +16,7 @@ Router.route('/login', function () {
   this.render('login');
 });
 
+
   Template.login.events({
 
     'submit #login-form' : function(e, t){
@@ -28,16 +29,21 @@ Router.route('/login', function () {
 
         Meteor.loginWithPassword(email, password, function(err){
         if (err){
-
         }
         else{
           // The user has been logged in.
         }
       });
          return false; 
-      }
+      },
+
   });
 
-Router.route('/signup', function () {
-  this.render('signup');
-});
+  Template.navBar.events({
+  	'click #login': function(){
+  		Router.go("/login");
+  	},
+  	'click #petTrace': function(){
+  		Router.go("/");
+  	}
+  });
