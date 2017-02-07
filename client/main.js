@@ -43,8 +43,11 @@ Router.route('/login', function () {
   });
 
    Template.registerPopUp.events({
-   	'click .overlay':function(){
-		if($(".overlay").css("display") == "flex"){
+   	'click .overlay':function(e){
+		if($(".overlay").css("display") == "flex" && !$("#account-email").is(":focus") && !$("#account-password").is(":focus") 
+													&& !$("#create-account").is(":focus")
+												&& !$("."+e.target.className).parents(".registerPopUpContainer").length == 1 
+											&& !$("."+e.target.className).parents(".overlay").length == 1){
 			$(".overlay").hide();
 	      	$(".registerPopUpContainer").hide();
 		}
