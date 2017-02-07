@@ -27,6 +27,18 @@
 	height:450px;
 }
 
+.overlay .registerPopUpContainer .closePopUp{
+	position: absolute;
+	width:100%;
+	top: 2%;
+	left:94%;
+}
+
+.overlay .registerPopUpContainer .closePopUp #xButtonRegister:hover{
+	color:red;
+	cursor: pointer;
+}
+
 .overlay .registerPopUpContainer .facebookRegister{
 	position: relative;
 	margin:0 0 30px 0;
