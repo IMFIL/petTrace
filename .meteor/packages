@@ -25,6 +25,5 @@ iron:router
 accounts-password
 accounts-facebook
 accounts-base
-twbs:bootstrap
 dburles:packery
 sacha:spin
