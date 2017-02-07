@@ -1,0 +1,102 @@
+
+.overlay{
+	background-color: rgba(100,100,100,0.6);
+	position: absolute;
+	top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	margin:0;
+	padding-left:0;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	display: none;
+}
+
+.overlay .registerPopUpContainer {
+	display:none;
+	background: #FFF;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:430px; 
+	height:450px;
+}
+
+.overlay .registerPopUpContainer .facebookRegister{
+	position: relative;
+	margin:0 0 30px 0;
+	width: 60%;
+	height:34px;
+	border-radius: 4px;
+	padding:0 0 0 10px;
+	box-sizing: border-box;
+	background-color: #3b5998;
+	display: flex;
+	align-items: center;
+
+}
+.overlay .registerPopUpContainer .facebookRegister:hover{
+	cursor: pointer;
+}
+
+.overlay .registerPopUpContainer .facebookRegisterText{
+	position: relative;
+	color:white;
+	padding: 0 0 0 15%;
+	font-family: "Francisco-UltraLight";
+	font-size:16px;
+	width:100%;
+
+}
+
+.overlay .registerPopUpContainer .facebookLogo{
+	height: 30px;
+}
+
+.overlay .registerPopUpContainer .orLine{
+	border: 0;
+	width:60%;
+    height: 3px;
+    margin:0 0 30px 0;
+    background-image: linear-gradient(to right, rgba(79,244,203,0.1), #4ff4f4,rgba(79,244,203,0.1));
+}
+
+.overlay .registerPopUpContainer #register-form{
+	width:60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.overlay .registerPopUpContainer input{
+	position: relative;
+	margin:0 0 50px 0;
+	width: 100%;
+	height:34px;
+	border-radius: 4px;
+	border:1px solid #ccc;
+	padding:0 0 0 10px;
+	box-sizing: border-box;
+	background-color: white;
+	font-family: "Francisco-UltraLight";
+	font-size: 18px;
+}
+
+.overlay .registerPopUpContainer #create-account{
+	font-size: 17px;
+	height:43px;
+	padding:0;
+	width:65%;
+	margin: 0;
+}
+
+
+.overlay .registerPopUpContainer #create-account:hover{
+	cursor: pointer;
+}

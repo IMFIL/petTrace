@@ -3,7 +3,6 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-
 Router.configure({
     layoutTemplate: 'main'
 });
@@ -15,7 +14,6 @@ Router.route('/', function () {
 Router.route('/login', function () {
   this.render('login');
 });
-
 
   Template.login.events({
 
@@ -37,7 +35,22 @@ Router.route('/login', function () {
          return false; 
       },
 
+      'click .registerLink':function(){
+      	$(".overlay").css("display","flex");
+      	$(".registerPopUpContainer").show();
+      }
+
   });
+
+   Template.registerPopUp.events({
+   	'click .overlay':function(){
+		if($(".overlay").css("display") == "flex"){
+			$(".overlay").hide();
+	      	$(".registerPopUpContainer").hide();
+		}
+		}
+	});
+
 
   Template.navBar.events({
   	'click #login': function(){

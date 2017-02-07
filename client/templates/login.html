@@ -18,5 +18,23 @@
 					</form> 
 			</div>
 		</div>
+		{{>registerPopUp}}
+	</div>
+</template>
+
+<template name="registerPopUp">
+	<div class="overlay">
+		<div class="registerPopUpContainer">
+			<div class="facebookRegister">
+				<img class="facebookLogo" src="facebookLogo.png">
+				<span class="facebookRegisterText">Register with Facebook</span>
+			</div>
+			<hr class="orLine">		
+			<form id="register-form" action="action">
+		       <input type="email" id="account-email" placeholder="Email" />
+		       <input type="password" id="account-password" placeholder="Password" />
+		       <input type="submit" id="create-account" value="Create an Account" />
+	  		</form>	
+	  	</div>	
 	</div>
 </template>

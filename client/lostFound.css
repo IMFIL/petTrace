@@ -53,4 +53,5 @@
 
 .selectionContainer .rowContainer .selectionElement:hover{
 	border: 1.5px solid #4ff4f4;
+	cursor: pointer;
 }
