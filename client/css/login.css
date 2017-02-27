@@ -105,6 +105,10 @@
 	font-size: 18px;
 }
 
+.loginContainer  #login-password{
+	margin: 0 0 0 0; /*so the register link is not destroyed in safari and mozilla*/
+}
+
 .loginContainer  #login-button{
 	font-size: 18px;
 	height:43px;
@@ -123,7 +127,6 @@ input:focus{
 }
 
 .loginContainer  .registerLink{
-	position: absolute;
     margin:  10px 0  10px 0;
     padding: 0;
     color: white;
